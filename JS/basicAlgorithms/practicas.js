@@ -91,4 +91,59 @@ let planet = "Tierra";
 let isInnerPlanet = true;
 let hasAtmosphere = true;
 let isHabitable = isInnerPlanet && hasAtmosphere;
-console.log(isHabitable);
+//console.log(isHabitable);
+
+
+//const quote = "Un Anillo para gobernarlos a todos. Un Anillo para encontrarlos, un Anillo para atraerlos a todos y atarlos en las tinieblas en la Tierra de Mordor donde se extienden las Sombras.";
+
+//console.log(quote.replaceAll(" ", ""));
+// Retorna "Un Gato para gobernarlos a todos. 
+// Un Gato para encontrarlos, un Gato para atraerlos 
+// a todos y atarlos en las tinieblas en la Tierra de Mordor 
+// donde se extienden las Sombras."
+
+const album = "Master of Puppets";
+
+console.log(album.slice(10, 13));
+// Retorna "Pup"
+
+const phrase = "Buenos días, ¿cómo estás?";
+console.log(phrase.split(" ", 2));
+// Retorna ["Buenos","días",",¿cómo" ]
+
+const quoteS = "    Luke, yo soy tu padre     ";
+console.log(quoteS.trim());
+// Retorna "Luke, soy tu padre"
+
+const winner = true;
+const winnerText = winner.toString();
+console.log(winnerText);
+// Retorna "true";
+
+let obj = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+      console.log(`Hello, my name is ${this.name}`);
+    }
+  };
+  
+  obj.greet(); // 'Hello, my name is John'
+
+
+  let batman= {
+    nombre: "Bruce",
+    apellidos: "Wayne", 
+    localizacion: "Gotham",
+    profesion: "Multimillonario"
+}
+    
+for (let clave in batman) {
+    console.log("Batman tiene la clave " + clave+ " con valor: " + batman[clave]);
+}
+
+//Retorna
+//Batman tiene la clave nombre con valor: Bruce
+//Batman tiene la clave apellidos con valor: Wayne
+//Batman tiene la clave localizacion con valor: Gotham
+//Batman tiene la clave profesion con valor: Multimillonario
