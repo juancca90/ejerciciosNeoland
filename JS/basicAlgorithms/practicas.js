@@ -138,12 +138,34 @@ let obj = {
     profesion: "Multimillonario"
 }
     
-for (let clave in batman) {
-    console.log("Batman tiene la clave " + clave+ " con valor: " + batman[clave]);
-}
+//for (let clave in batman) {
+//    console.log("Batman tiene la clave " + clave+ " con valor: " + batman[clave]);
+//}
 
 //Retorna
 //Batman tiene la clave nombre con valor: Bruce
 //Batman tiene la clave apellidos con valor: Wayne
 //Batman tiene la clave localizacion con valor: Gotham
 //Batman tiene la clave profesion con valor: Multimillonario
+
+
+function car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+let mycar = new car('Eagle', 'Talon TSi', 1993);
+
+for (let clave in mycar) {
+  console.log("clave " + clave+ " con valor: " + mycar[clave]);
+}
+
+
+let i = 0;
+let acc = 0;
+
+while (i< 10){
+  i++;
+  console.log(`Estamos con la i: ${i}`)
+}
