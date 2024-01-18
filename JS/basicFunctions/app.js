@@ -215,3 +215,4 @@ const repeatCounter = (arrCounter) => {
 
 const counter = repeatCounter(counterWords);
 console.log(counter);
+
