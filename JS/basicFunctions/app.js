@@ -182,7 +182,8 @@ console.log(resultadoBusqueda);
 
 //Iteration #8: Contador de repeticiones
 //!---------------------------------------------------------------------------------
-//? Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma. Puedes usar este array para probar tu función:
+//? Crea una función que nos devuelva el número de veces que se repite cada una 
+//? de las palabras que lo conforma. Puedes usar este array para probar tu función:
 //!---------------------------------------------------------------------------------
 
 const counterWords = [
@@ -198,6 +199,19 @@ const counterWords = [
 'upgrade',
 'code'
 ];
-function repeatCounter(param) {
-// insert code
-}
+const repeatCounter = (arrCounter) => {
+    const wordCount = [];
+
+    for (const word of arrCounter) {
+        if (wordCount[word]) {
+            wordCount[word] += 1;
+        } else {
+            wordCount[word] = 1;
+        }
+    }
+
+    return wordCount;
+};
+
+const counter = repeatCounter(counterWords);
+console.log(counter);
