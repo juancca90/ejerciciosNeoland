@@ -117,6 +117,7 @@ console.log(suma);
 //? Puedes usar este array para probar tu función:
 //!---------------------------------------------------------------------------------
 
+
 const duplicates = [
 'sushi',
 'pizza',
@@ -130,26 +131,23 @@ const duplicates = [
 'pasta',
 'soda'
 ];
-function removeDuplicates(arr){
 
-    let dupl;
-    for (let i = 0; i < arr.length; i++){
-        
-        if (arr[i] === dupl){
-            delete arr[i];
-        }
-    }
-}
-const removeDupl = removeDuplicates(duplicates);
-console.log(removeDupl);
+  let resultArray = duplicates.filter((item,index)=>{
+    return duplicates.indexOf(item) === index;
+  })
+
+  console.log(resultArray);
+
 
 //Iteración #7: Buscador de nombres
 
 //!---------------------------------------------------------------------------------
 //? Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe dentro de dicho array - 
-//? comprueba si existe el elemento, en caso que existan nos devuelve un true y la posición de dicho elemento y por la contra un false.
+//? comprueba si existe el elemento, en caso que existan nos devuelve un true y la posición de dicho elemento y por el contrario un false.
 //? Puedes usar este array para probar tu función:
 //!---------------------------------------------------------------------------------
+
+
 const nameFinder = [
 'Peter',
 'Steve',
@@ -163,9 +161,23 @@ const nameFinder = [
 'Jessica',
 'Marc'
 ];
-function finderName(param) {
-// insert code
-}
+
+const finderName = (arrayNameFinder, buscarName)=> {
+    
+    for(let i = 0; i < arrayNameFinder.length; i++) {
+
+        if(arrayNameFinder[i].toLowerCase().trim() ===
+        buscarName.toLowerCase().trim()){
+            const result = arrayNameFinder[i];
+            return `true ${i}`;
+            }else{
+                return `false`;
+            }
+    }
+};
+const resultadoBusqueda = finderName(nameFinder, 'Peter');
+console.log(resultadoBusqueda);
+
 
 
 //Iteration #8: Contador de repeticiones

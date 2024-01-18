@@ -169,3 +169,5 @@ while (i< 10){
   i++;
   console.log(`Estamos con la i: ${i}`)
 }
+
+
