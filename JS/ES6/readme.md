@@ -1,11 +1,5 @@
-JS ES6
-Bienvenido a Neoland! Por fin ha llegado el momento de ponernos a trabajar. Hoy hemos avanzado mucho con los conceptos de JS y es el momento de ponerlos en práctica.
-Antes de comenzar crea un nuevo proyecto en vuestro GitLab o Github, el nombre que debéis utilizar es neoland-es6 y recuerda realizar un commit por iteración:
-git add .
-git commit -m "Iteration#1"
-git push origin master
-​
 Guía de práctica
+
 Iteración #1: Arrows
 Crea una arrow function que tenga dos parametros a y b y
 que por defecto el valor de a = 10 y de b = 5. Haz que la función muestre
