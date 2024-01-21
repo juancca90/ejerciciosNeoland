@@ -57,3 +57,38 @@ const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 
     for(value of placesToTravel) {
         console.log(value);
     }
+
+
+//Iteración #4: Probando For...in
+//!-----------------------------------------
+//? Usa un for...in para imprimir por consola los datos del alienígena.. Puedes usar este objeto:
+    
+const alien = {
+    name: 'Wormuck',
+    race: 'Cucusumusu',
+    planet: 'Eden',
+    weight: '259kg'
+}
+
+for(let clave in alien){
+    console.log(`${clave} con valor: ${alien[clave]}`);
+}
+
+
+// Iteración #5: Probando For
+//!---------------------------------------
+//? Usa un bucle for para recorrer todos los destinos del array y elimina los elementos que tengan el id 11 y 40. 
+//? Imprime en un console log el array. Puedes usar este array:
+
+const placesToTravelFor = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 23, name: 'Murcia'}, {id: 40, name: 'Santander'}, {id: 44, name: 'Filipinas'}, {id: 59, name: 'Madagascar'}]
+let places;
+const bucleFor = (placesToTravelFor)=>{
+    for(let i = 0; i < placesToTravelFor[i].length; i++){
+        if(placesToTravelFor[i].id == 11 || placesToTravelFor[i].id == 40){
+            delete placesToTravelFor[i];
+        }
+        
+    }
+    
+}
+console.log(bucleFor(placesToTravelFor));

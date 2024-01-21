@@ -1,5 +1,3 @@
-Guía de práctica
-
 Iteración #1: Usa includes
 Haz un bucle y muestra por consola todos aquellos valores del array que incluyan la palabra "Camiseta". Usa la función .includes de javascript.
 const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
@@ -86,13 +84,3 @@ const toys = [
 {id: 40, name: 'El gato con Guantes', sellCount: 8},
 {id: 40, name: 'El gato felix', sellCount: 35}
 ]
-​
-Happy coding 🌟 & Happy Neolander 💕
-
-Concepto para ejercicio Iteración#2 ( Sergio ).
-Para poder recorrer un array con objetos deberás, recorrerlo con un array y por cada posición añadir una nueva propiedad a cada objeto.
-Pista: ( para añadir la propiedad dentro del objeto )
-//Pista a la hora de recorrer un array y poder meter en el objeto una nueva propiedad
-//deberás asignar a ese array por indice una propiedad tal que así
-
-nombreLista[indice].nombrePropiedad = valor;
