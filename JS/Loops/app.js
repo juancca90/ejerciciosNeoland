@@ -81,14 +81,15 @@ for(let clave in alien){
 //? Imprime en un console log el array. Puedes usar este array:
 
 const placesToTravelFor = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 23, name: 'Murcia'}, {id: 40, name: 'Santander'}, {id: 44, name: 'Filipinas'}, {id: 59, name: 'Madagascar'}]
-let places;
-const bucleFor = (placesToTravelFor)=>{
-    for(let i = 0; i < placesToTravelFor[i].length; i++){
-        if(placesToTravelFor[i].id == 11 || placesToTravelFor[i].id == 40){
-            delete placesToTravelFor[i];
-        }
-        
+
+const filteredPlaces = [];
+
+for (let i = 0; i < placesToTravelFor.length; i++) {
+
+    const currentDestination = placesToTravelFor[i];
+
+    if (currentDestination.id !== 11 && currentDestination.id !== 40) {
+        filteredPlaces.push(currentDestination);
     }
-    
 }
-console.log(bucleFor(placesToTravelFor));
+console.log(filteredPlaces);
