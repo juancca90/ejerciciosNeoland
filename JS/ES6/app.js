@@ -124,3 +124,61 @@ const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
 const [colors1, colors2, colors3, ...restOfColors] = colors;
 const colorCopia = [colors1, colors2, ...restOfColors];
 console.log(colorCopia);
+
+
+// Iteración #4: Map
+//!-----------------------------------------
+
+//? 4.1 Dado el siguiente array, devuelve un array con sus nombres utilizando .map().
+
+const users = [
+{id: 1, name: 'Abel'},
+{id:2, name: 'Julia'},
+{id:3, name: 'Pedro'},
+{id:4, name: 'Amanda'}
+];
+
+const names = users.map(user => user.name);
+
+console.log(names); 
+
+//? 4.2 Dado el siguiente array, devuelve una lista que contenga los valores 
+//? de la propiedad .name y cambia el nombre a 'Anacleto' en caso de que empiece por 'A'.
+
+const users1 = [
+{id: 1, name: 'Abel'},
+{id:2, name: 'Julia'},
+{id:3, name: 'Pedro'},
+{id:4, name: 'Amanda'}
+];
+
+const namesArray = users1.map(user => user.name);
+
+const namesWithA = namesArray.filter(name => name.includes('A'));
+
+users1.forEach(user => {
+  if (namesWithA.includes(user.name)) {
+    user.name = 'Anacleto';
+  }
+});
+
+console.log(users1);
+
+//? 4.3 Dado el siguiente array, devuelve una lista que contenga los valores
+//? de la propiedad .name y añade al valor de .name el string ' (Visitado)'
+//? cuando el valor de la propiedad isVisited = true.
+const cities = [
+{isVisited:true, name: 'Tokyo'},
+{isVisited:false, name: 'Madagascar'},
+{isVisited:true, name: 'Amsterdam'},
+{isVisited:false, name: 'Seul'}
+];
+cities.forEach(city => {
+    if (city.isVisited === true) {
+      city.name = `${city.name} (visitado)`;
+    }
+  });
+  
+  const citiesName = cities.map(ciudad => ciudad.name);
+  
+  console.log(citiesName);
