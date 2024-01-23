@@ -369,9 +369,7 @@ const exams = [
 {name: 'Robert Kiyosaki', score: 2},
 {name: 'Keanu Reeves', score: 10}
 ];
-
-const suma2 = exams.reduce((acumulador, valor) => {
-  return acumulador + valor.score;}, 0);
+const suma2 = exams.reduce((acumulador, valor) => acumulador + valor.score, 0);
 
 console.log(`\n`, "Ejercicio 7.1");
 console.log (suma2);
@@ -379,6 +377,15 @@ console.log (suma2);
 //? 7.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los
 //? alumnos que esten aprobados usando la función .reduce().
 
+const aprobados = exams.filter(nota => nota.score >= 5);
+const sumaAprobados = aprobados.reduce((acumulador, valor) => acumulador + valor.score,0);
+console.log(`\n`, "Ejercicio 7.2");
+console.log(sumaAprobados);
 
 
 //? 7.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
+
+const sumMedia = exams.reduce((acumulador, valor) => acumulador + valor.score, 0);
+const media = sumMedia / exams.length;
+console.log(`\n`, "Ejercicio 7.3");
+console.log(media);
