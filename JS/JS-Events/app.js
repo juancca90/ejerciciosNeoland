@@ -18,7 +18,7 @@ document.querySelector(".focus").addEventListener("focus", (e) => handleFocus(e)
 
 //** 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
 
-const handleInput = (event) => {
-    console.log(event);
-}
-document.querySelector(".value").addEventListener("input", (e) => handleInput(e));
+document.type = "text";
+document.addEventListener("input", (e) => {
+  console.log(e.target.value);
+});
