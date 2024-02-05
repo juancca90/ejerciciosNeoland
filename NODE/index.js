@@ -1,5 +1,3 @@
-//? crear nuestro servidor express
-
 const express = require("express");
 const dotenv = require("dotenv");
 const { connect } = require("./src/utils/db");

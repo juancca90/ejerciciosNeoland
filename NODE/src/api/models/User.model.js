@@ -2,6 +2,7 @@ const bcrypt = require("bcrypt"); // para encryptar informacion
 const validator = require("validator"); /// nos sirve para validad info
 const mongoose = require("mongoose");
 
+
 const UserSchema = new mongoose.Schema(
   // vamos a tener la definicion de datos
   {
